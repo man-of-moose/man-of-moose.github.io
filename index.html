@@ -18,11 +18,13 @@ document.write(rev_str);
 <p>Multiplication Table:</p>
 <input type="button" value="Generate Table" onclick="create_table()">
 <script>
-var num1 = prompt("Please enter a number", "2");
-var num1 = parseInt(num1);
+// var num1 = prompt("Please enter a number", "2");
+// var num1 = parseInt(num1);
 
 function create_table() {
 
+  var test = prompt("Please enter a number", "2");
+  var test = parseInt(test);
   // get ref for body
   var body = document.getElementsByTagName("body")[0];
 
@@ -36,7 +38,7 @@ function create_table() {
 
     for (var j = 0; j < 4; j++) {
       var cell = document.createElement("td");
-      var cellText = document.createTextNode(num1*k);
+      var cellText = document.createTextNode(test*k);
       cell.appendChild(cellText);
       row.appendChild(cell);
       k++
