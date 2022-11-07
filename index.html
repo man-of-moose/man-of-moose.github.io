@@ -54,5 +54,19 @@ function create_table() {
 
 </script>
 
+<p>Reversed String Analysis - Better</p>
+<input type="button" value="Generate Table" onclick="reverse_string()">
+<script>
+
+function reverse_string() {
+  var str_rev = prompt("Please enter a phrase for reversal");
+  document.write(str_rev + " " +"...becomes..." + " ");
+  var str_list = str_rev.split("");
+  var rev_list = str_list.reverse();
+  var rev_str = rev_list.join("");
+  document.write(rev_str);
+}
+</script>
+
 </body>
 </html>
